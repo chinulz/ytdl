@@ -1,0 +1,20 @@
+from pytube import YouTube
+import time
+
+url = input("\nMasukan link yt : ")
+print("\nDownloading Video...")
+time.sleep(2)
+print("proces")
+time.sleep(3)
+print("proces")
+time.sleep(4)
+print("proces")
+yt = YouTube(url)
+yt.streams.get_highest_resolution().download('video')
+print("\nDone")
+time.sleep(2)
+print("Processed !")
+time.sleep(3)
+print(yt.title, "\nSucces Downloading This Video From YouTube")
+time.sleep(4)
+print("\n\nCreated By ChinuLz\n\n\n\n")
